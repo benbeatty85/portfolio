@@ -17,35 +17,181 @@ body {
   }
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+/*Header*/
+
+
 .heading-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding: 50px;
-    width: 90vw;
-    border-radius: 50px;
+    background-color: #CDCDC0;
+    border-top: 5px solid #008080;
     margin: auto;
-    margin-top: 5px;
-    border: 7px solid #FF8C00;
-    animation: 2s ease-out 0s 1 slideInFromLeft;
+    text-align: center;
 }
 
 .heading-text h1 {
     font-family: 'Catamaran', sans-serif;
     text-transform: capitalize;
-    color: #000;
+    color: #708090;
     font-size: 70px;
     transition: all .5s ease-in-out;
-}
-
-.heading-text h1:hover {
-    transform: scale(1.3);
-    letter-spacing: 20px;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
 }
 
 .heading-text h2 {
     font-family: 'Cabin Sketch', cursive;
     text-transform: lowercase;
-    color: #000;
+    color: #CD5C5C;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
 }
+
+
+/*Description*/
+
+
+
+.description {
+    text-align: center;
+    padding: 40px;
+    background-color: #FFFAFA;
+    margin: auto;
+    border-bottom: 5px solid #008080;
+}
+
+.description p {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: capitalize;
+    color: #708090;
+    font-size: 40px;
+    animation: 2s ease-out 0s 1 slideInFromRight;
+}
+
+.grow {
+    transition: all .5s ease-in-out;
+    color: #FF8C00;
+}
+
+.grow:hover {
+    transform: scale(1.3);
+    letter-spacing: 10px;
+    color: #CD5C5C;
+}
+
+.grow:active {
+    transform: scale(1.3);
+    letter-spacing: 10px;
+    color: #CD5C5C;
+}
+
+
+/*images*/
+
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #CDCDC0;
+}
+
+.images img {
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+/*Skills Section*/
+
+.skills {
+    padding: 20px;
+    background-color: #FFFAFA;
+    margin: auto;
+    border-bottom: 5px solid #008080;
+    border-top: 5px solid #008080;
+}
+
+.skills-both {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #FFFAFA;
+    margin: auto;
+    width: 40vw;
+}
+
+.skills-front {
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+}
+
+.skills-front:hover {
+    transform: scale(1.2);
+}
+
+.skills-back {
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+}
+
+.skills-back:hover {
+    transform: scale(1.2);
+}
+
+.skills h2 {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: capitalize;
+    color: #708090;
+    font-size: 50px;
+    text-align: center;
+}
+
+.skills h3 {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: capitalize;
+    color: #CD5C5C;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.skills li {
+    list-style-type: none;
+    font-family: 'Cabin Sketch', cursive;
+    text-transform: lowercase;
+    color: #708090;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
