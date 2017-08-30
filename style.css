@@ -26,8 +26,8 @@ body {
     width: 90vw;
     border-radius: 50px;
     margin: auto;
-    border-top: 7px solid #FF8C00;
-    border-bottom: 7px solid #FF8C00;
+    margin-top: 5px;
+    border: 7px solid #FF8C00;
     animation: 2s ease-out 0s 1 slideInFromLeft;
 }
 
