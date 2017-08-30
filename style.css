@@ -6,6 +6,7 @@
 
 body {
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 @keyframes slideInFromLeft {
@@ -107,7 +108,7 @@ body {
 
 .images img {
     width: 50%;
-    height: 50%;
+    height: 425px;
     padding: 20px;
     border-radius: 15px;
 }
@@ -126,33 +127,40 @@ body {
 .skills-both {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     background-color: #FFFAFA;
     margin: auto;
-    width: 40vw;
+    width: 80vw;
 }
 
 .skills-front {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
     padding: 15px;
     border-radius: 15px;
     transition: all .5s ease-in-out;
+    order: 1;
+    flex-grow: 2;
 }
 
 .skills-front:hover {
     transform: scale(1.2);
+    background-color: rgba(154,205,50,0.4);
 }
 
 .skills-back {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
     padding: 15px;
     border-radius: 15px;
     transition: all .5s ease-in-out;
+    order: 3;
+    flex-grow: 2;
 }
 
 .skills-back:hover {
     transform: scale(1.2);
+    background-color: rgba(154,205,50,0.4);
 }
 
 .skills h2 {
@@ -161,6 +169,8 @@ body {
     color: #708090;
     font-size: 50px;
     text-align: center;
+    order: 2;
+    flex-grow: 1;
 }
 
 .skills h3 {
@@ -179,6 +189,50 @@ body {
     color: #708090;
     font-size: 20px;
     padding: 5px;
+    text-align: center;
+}
+
+
+/*Past Work*/
+
+.past-work {
+    background-color: #CDCDC0;
+}
+
+.past-work h2 {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: capitalize;
+    color: #708090;
+    font-size: 50px;
+    text-align: center;
+}
+
+.work-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.past-work a {
+    width: 40%;
+}
+
+.past-work img {
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    opacity: 0.5;
+    transition: all .5s ease-in-out;
+}
+
+.past-work img:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 
