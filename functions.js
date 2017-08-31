@@ -14,3 +14,14 @@ function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
+
+
+
+
+//page loader
+
+var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function () {
+  overlay.style.display = 'none';
+});
