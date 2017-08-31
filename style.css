@@ -253,25 +253,53 @@ body {
     align-items: center;
 }
 
-.contact h3 {
-    font-family: 'Catamaran', sans-serif;
-    text-transform: capitalize;
-    color: #708090;
-    font-size: 50px;
-    text-align: center;
-}
-
 .email a {
     text-decoration: none;
     text-align: center;
     padding: 10px;
     font-size: 20px;
-    color: #FF8C00;
+    color: #708090;
     margin: auto;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 25px;
 }
 
 .email a:hover {
     color: #CD5C5C;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.icon {
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.icon a {
+    font-size: 30px;
+    color: #708090;
+}
+
+.icon-1 {
+    background-color: #CDCDC0;
+    margin-right:  20px;
+}
+
+.icon-2 {
+    background-color: #CDCDC0;
+    margin-left: 20px;
+}
+
+.icon-1:hover {
+    background-color: rgba(205,92,92,0.4);
+}
+
+.icon-2:hover {
+    background-color: rgba(205,92,92,0.4);
 }
 
 
