@@ -108,7 +108,7 @@ body {
 
 .images img {
     width: 50%;
-    height: 425px;
+    height: 450px;
     padding: 20px;
     border-radius: 15px;
 }
@@ -303,6 +303,31 @@ body {
 }
 
 
+
+/*Button*/
+
+
+
+#myBtn {
+    position: fixed; 
+    bottom: 20px; 
+    right: 60px; 
+    z-index: 1000; 
+    border: none;
+    outline: none;
+    background-color: #708090; 
+    color: white;
+    cursor: pointer; 
+    padding: 25px; 
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 30px;
+    display: none;
+}
+
+#myBtn:active {
+    transform: translate(5px, 5px);
+}
 
 
 
