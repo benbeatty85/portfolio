@@ -365,6 +365,10 @@ body {
     padding: 10px;
 }
     
+    .past-work a {
+    width: 70%;
+}
+    
     #myBtn {
     bottom: 10px; 
     right: 10px;
