@@ -194,10 +194,58 @@ body {
 }
 
 
+/*Design Work*/
+
+.design {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #CDCDC0;
+    border-bottom: 5px solid #008080;
+}
+
+.design img {
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    opacity: 0.7;
+    transition: all .5s ease-in-out;
+}
+
+.design img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.design a {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.design h2 {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: capitalize;
+    color: #708090;
+    font-size: 50px;
+    text-align: center;
+}
+
+.design h3 {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: capitalize;
+    color: #CD5C5C;
+    font-size: 30px;
+    text-align: center;
+}
+
+
 /*Past Work*/
 
 .past-work {
-    background-color: #CDCDC0;
+    background-color: #FFFAFA;
     border-bottom: 5px solid #008080;
 }
 
@@ -208,6 +256,7 @@ body {
     font-size: 50px;
     text-align: center;
 }
+
 
 .work-links {
     display: flex;
@@ -245,7 +294,7 @@ body {
 
 .contact {
     padding: 20px;
-    background-color: #FFFAFA;
+    background-color: #CDCDC0;
     margin: auto;
     border-bottom: 5px solid #008080;
     display: flex;
@@ -285,12 +334,12 @@ body {
 }
 
 .icon-1 {
-    background-color: #CDCDC0;
+    background-color: #fff;
     margin-right:  20px;
 }
 
 .icon-2 {
-    background-color: #CDCDC0;
+    background-color: #fff;
     margin-left: 20px;
 }
 
