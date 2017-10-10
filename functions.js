@@ -16,8 +16,6 @@ function topFunction() {
 }
 
 
-
-
 //page loader
 
 var overlay = document.getElementById("overlay");
