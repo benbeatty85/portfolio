@@ -380,6 +380,7 @@ body {
 	bottom:20px;
 	background:rgba(155,155,155,0.6);
 	padding:20px;
+    border-radius: 15px;
 	text-align: center;
 	margin: 0 0 0 0;
 	cursor:pointer;
