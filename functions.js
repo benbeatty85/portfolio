@@ -1,20 +1,3 @@
-// When the user scrolls down 1700px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
-    document.documentElement.scrollTop = 0; // For IE and Firefox
-}
-
 
 //page loader
 
@@ -23,3 +6,14 @@ var overlay = document.getElementById("overlay");
 window.addEventListener('load', function () {
   overlay.style.display = 'none';
 });
+
+//Smooth Scrolling to top of page
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1000 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".the-top").offset().top},"2000");return false})})
