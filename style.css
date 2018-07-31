@@ -95,6 +95,69 @@ body {
   }
 }
 
+.arrow {
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+.arrow a {
+    text-decoration: none;
+    color: white;
+    font-size: 3.5em;
+}
+
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 1000ms infinite linear;
+  -o-animation: bounce 1000ms infinite linear;
+  -webkit-animation: bounce 1000ms infinite linear;
+  animation: bounce 1000ms infinite linear;
+}
+
+.bounce:hover,:focus {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
 
 /*Description*/
 
@@ -525,8 +588,8 @@ body {
 
 @media only screen and (max-width: 768px) {
     
-    description p {
-    font-size: 10px;
+    .description p {
+    font-size: 20px;
 }
     
      .skills-both {
