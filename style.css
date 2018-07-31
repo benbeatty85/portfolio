@@ -9,6 +9,74 @@ body {
     overflow-x: hidden;
 }
 
+
+/*Header*/
+
+.v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100vw;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.header-content {
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading-text {
+    padding: 50px;
+}
+
+.heading-text h1 {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 75px;
+    transition: all .5s ease-in-out;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+.heading-text h2 {
+    font-family: 'Cabin Sketch', cursive;
+    text-transform: lowercase;
+    color: #CD5C5C;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -28,51 +96,19 @@ body {
 }
 
 
-/*Header*/
-
-
-.heading-text {
-    padding: 50px;
-    background-color: #CDCDC0;
-    border-top: 5px solid #008080;
-    margin: auto;
-    text-align: center;
-}
-
-.heading-text h1 {
-    font-family: 'Catamaran', sans-serif;
-    text-transform: capitalize;
-    color: #708090;
-    font-size: 70px;
-    transition: all .5s ease-in-out;
-    animation: 2s ease-out 0s 1 slideInFromLeft;
-}
-
-.heading-text h2 {
-    font-family: 'Cabin Sketch', cursive;
-    text-transform: lowercase;
-    color: #CD5C5C;
-    animation: 2s ease-out 0s 1 slideInFromLeft;
-}
-
-
 /*Description*/
 
 
 
 .description {
-    text-align: center;
     padding: 40px;
-    background-color: #FFFAFA;
-    margin: auto;
-    border-bottom: 5px solid #008080;
 }
 
 .description p {
     font-family: 'Catamaran', sans-serif;
     text-transform: capitalize;
-    color: #708090;
-    font-size: 40px;
+    color: #fff;
+    font-size: 45px;
     animation: 2s ease-out 0s 1 slideInFromRight;
 }
 
@@ -94,25 +130,27 @@ body {
 }
 
 
-/*images*/
+/*Video*/
 
-
-
-.images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #CDCDC0;
+#background-video {
+  position: absolute;
+  top: 0px; 
+  left: 0px; 
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
 }
 
-.images img {
-    width: 50%;
-    height: 525px;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 100%;
+@media only screen and (max-width: 768px) {
+  video {
+    display:none;
+  }
+  body{
+    background-image:url(“image.png”);
+  }
 }
+
+
 
 
 /*Skills Section*/
@@ -450,25 +488,47 @@ body {
 
 /*Media Queries*/
 
+@media only screen and (max-width: 960px) {
+    
+    .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: url('Office-Day.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+    
+    .heading-text {
+    padding: 50px;
+}
+    
+    .heading-text h1 {
+    font-size: 45px;
+}
 
-@media only screen and (max-width: 1200px) {
-    .images {
-        flex-direction: column;
-        align-items: center;
-    }
+.heading-text h2 {
+    color: #CD5C5C;
+}
     
-    .images img {
-    width: 70%;
-    height: auto;
+    .description {
+    padding: 20px;
+}
+
+.description p {
+    font-size: 25px;
 }
     
 }
+
 
 
 @media only screen and (max-width: 768px) {
-    .images img {
-    width: 90%;
+    
+    description p {
+    font-size: 10px;
 }
+    
      .skills-both {
     flex-direction: column;
 }
