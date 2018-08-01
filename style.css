@@ -209,83 +209,62 @@ body {
 }
 
 
-/*Skills Section*/
+/*About Section*/
 
-.skills {
-    padding: 20px;
-    background-color: #FFFAFA;
-    margin: auto;
-    border-bottom: 5px solid #008080;
-    border-top: 5px solid #008080;
-}
-
-.skills-both {
+.about {
+    height: 500px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    background-color: #FFFAFA;
-    margin: auto;
-    width: 80vw;
+    padding: 5em;
+    background: #CD5C5C;
 }
 
-.skills-front {
-    background-color: rgba(0,0,0,0.1);
-    padding: 15px;
-    border-radius: 15px;
-    transition: all .5s ease-in-out;
-    order: 1;
-    flex-grow: 2;
-}
-
-.skills-front:hover {
-    transform: scale(1.1);
-    background-color: rgba(154,205,50,0.4);
-}
-
-.skills-back {
-    background-color: rgba(0,0,0,0.1);
-    padding: 15px;
-    border-radius: 15px;
-    transition: all .5s ease-in-out;
-    order: 3;
-    flex-grow: 2;
-}
-
-.skills-back:hover {
-    transform: scale(1.1);
-    background-color: rgba(154,205,50,0.4);
-}
-
-.skills h2 {
-    font-family: 'Quicksand', sans-serif;
-    text-transform: capitalize;
-    color: #708090;
-    font-size: 50px;
+.about-heading {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     order: 2;
-    flex-grow: 1;
-}
-
-.skills h3 {
-    font-family: 'Quicksand', sans-serif;
-    text-transform: capitalize;
-    color: #CD5C5C;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.skills li {
-    list-style-type: none;
+    width: 20%;
     font-family: 'Nixie One', cursive;
     text-transform: lowercase;
-    color: #708090;
-    font-size: 20px;
-    padding: 5px;
-    text-align: center;
+    color: #fff;
 }
+
+.about-heading h2 {
+    font-size: 5em;
+    padding: 10px;
+}
+
+.about-heading h2::before {
+    content: '';
+    width: 100%;
+    border-bottom: 4px dotted white;
+    display: block;
+    margin: 25px auto;
+}
+
+.about-heading i {
+    font-size: 5em;
+}
+
+.about-heading i::after {
+    content: '';
+    width: 92%;
+    border-bottom: 4px dotted white;
+    display: block;
+    margin: 25px auto;
+}
+
+.about-paragraph {
+    order: 1;
+    width: 60%;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+
 
 
 /*Design Work*/
@@ -575,6 +554,45 @@ body {
     font-size: 25px;
 }
     
+    .about {
+    flex-direction: column-reverse;
+    height: 700px;
+}
+
+.about-heading {
+    width: 100%;
+}
+
+.about-heading h2 {
+    font-size: 4em;
+}
+
+.about-heading h2::before {
+    content: '';
+    width: 50%;
+    border-bottom: 4px dotted white;
+    display: block;
+    margin: 20px auto;
+}
+
+.about-heading i {
+    font-size: 3em;
+}
+
+.about-heading i::after {
+    content: '';
+    width: 50%;
+    border-bottom: 4px dotted white;
+    display: block;
+    margin: 20px auto;
+}
+
+.about-paragraph {
+    width: 100%;
+    font-size: 1.1em;
+    text-align: center;
+}
+    
 }
 
 
@@ -583,6 +601,11 @@ body {
     
     .description p {
     font-size: 20px;
+}
+    
+    .about-heading {
+    width: 100%;
+    padding-bottom: 300px;
 }
     
      .skills-both {
