@@ -177,10 +177,38 @@ body {
 }
 
 .grow {
-    transition: all .5s ease-in-out;
     color: #FF8C00;
+    position: relative;
+    padding: 10px;
 }
 
+.grow::before, .grow::after {
+    position: absolute;
+    content: '';
+    transition: transform 500ms ease;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: white;
+}
+
+.grow::before {
+    border-width: 2px 0 2px 0;
+    transform: scaleX(0);
+}
+
+.grow::after {
+    border-width: 0 2px 0 2px;
+    transform: scaleY(0);
+}
+
+.grow:hover::before, .grow:hover::after {
+    transform: scale(1,1);
+}
+
+/*
 .grow:hover {
     transform: scale(1.3);
     letter-spacing: 10px;
@@ -192,6 +220,7 @@ body {
     letter-spacing: 10px;
     color: #CD5C5C;
 }
+*/
 
 
 
