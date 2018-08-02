@@ -307,14 +307,14 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around
+    justify-content: center;
 }
 
 .member {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px;
+    padding: 20px 20px 60px 20px;
     position: relative;
     flex-wrap: wrap;
 }
