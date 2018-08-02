@@ -301,6 +301,67 @@ body {
     margin: 25px auto;
 }
 
+.team-members {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.member img {
+    width: 360px;
+    height: 480px;
+    display: block;
+}
+
+
+.container-two {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,99,71,0.7);
+    overflow: hidden;
+    height: 100%;
+    width: 0;
+    transition: 500ms all ease;
+    -webkit-transition: 500ms all ease;
+    -ms-transition: 500ms all ease;
+    -o-transition: 500ms all ease;
+}
+
+.container-two:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  text-transform: capitalize;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
 
 /*Design Work*/
 
