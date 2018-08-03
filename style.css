@@ -515,127 +515,121 @@ body {
 }
 
 
-
-/*Past Work*/
-
-.past-work {
-    background-color: #FFFAFA;
-    border-bottom: 5px solid #008080;
-}
-
-.past-work h2 {
-    font-family: 'Quicksand', sans-serif;
-    text-transform: capitalize;
-    color: #708090;
-    font-size: 50px;
-    text-align: center;
-}
-
-
-.work-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-}
-
-.past-work a {
-    width: 40%;
-}
-
-.past-work img {
-    width: 100%;
-    height: 30%;
-    padding: 10px;
-    border-radius: 15px;
-    opacity: 0.7;
-    transition: opacity .5s ease-in-out;
-}
-
-.past-work img:hover {
-    opacity: 1;
-}
-
-
-
 /* Contact Section*/
 
-
-
 .contact {
-    padding: 20px;
-    background-color: #CDCDC0;
-    margin: auto;
-    border-bottom: 5px solid #008080;
+    background-color: #CD5C5C;
+    width: 100%;
+}
+
+.contact-heading {
+    text-align: center;
+    color: white;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-heading h2 {
+    font-size: 5em;
+    padding: 10px;
+    font-family: 'Nixie One', cursive;
+    text-transform: lowercase;
+}
+
+.contact-heading h2::before {
+     content: '';
+    width: 20%;
+    border-bottom: 4px dotted white;
+    display: block;
+    margin: 25px auto;
+}
+
+.contact-heading i {
+    font-size: 5em;
+}
+
+.contact-heading i::after {
+     content: '';
+    width: 20%;
+    border-bottom: 4px dotted white;
+    display: block;
+    margin: 25px auto;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.email a {
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    color: #008080;
-    margin: auto;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
-    transition: color 0.5s;
-    -moz-transition: color 0.5s;
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
+.contact label {
+    display: block;
+    margin-top: 1em;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    color: #414141;
 }
 
-.email a:hover {
-    color: #708080;
-    transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 
+input {
+    display: block;
+    padding: 0.75em;
+    width: 20vw;
+    font-size: 1rem;
+    color: #414141;
 }
 
-.social-media {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
+textarea {
+    display: block;
+    padding: 0.75em;
+    width: 50vw;
+    font-size: 1rem;
+    color: #414141;
 }
 
-.icon {
-    padding: 15px;
-    border-radius: 100%;
-    background: rgba(155,155,155,0.3);
-    transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -webkit-transition: background 0.5s;
-    -o-transition: background 0.5s;
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  text-transform: capitalize;
+  padding: 25px;
+  width: 20vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
 }
 
-.icon:hover {
-    background: rgba(155,155,155,0.7);
-    transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.icon a {
-    font-size: 30px;
-    color: #008080;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-.icon-1 {
-    margin-right:  20px;
+.button:hover {
+    background-color: antiquewhite;
 }
 
-.icon-2 {
-    margin-left: 20px;
+.button:hover span {
+  padding-right: 25px;
 }
 
-
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 /*Top of page button*/
 
@@ -653,7 +647,7 @@ body {
 	position:absolute;
 	right:20px;
 	bottom:20px;
-	background:rgba(155,155,155,0.6);
+	background:black;
 	padding:20px;
     border-radius: 15px;
 	text-align: center;
@@ -665,25 +659,9 @@ body {
 	-o-transition: 0.5s; 		
 }
 
-.scroll:hover {
-	background:rgba(155,155,155,0.8);
-	transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 		
-}
-
-.scroll:focus {
-    background:rgba(155,155,155,0.8);
-	transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 		
-}
-
 .scroll .fa {
-	font-size:40px;
-    color: #708090;
+	font-size:30px;
+    color: #CD5C5C;
 	margin-top:-5px;
 	margin-left:1px;
 	transition: 0.5s;
@@ -711,7 +689,7 @@ body {
     width: 100px;
     height: 100px;
     border: 5px solid #fff;
-    border-top-color: darkkhaki;
+    border-top-color: #CD5C5C;
     border-radius: 100%;
     margin-top: 400px;
     animation: round 1s linear infinite;
@@ -795,6 +773,18 @@ body {
     text-align: center;
 }
     
+    input {
+    width: 40vw;
+}
+
+textarea {
+    width: 70vw;
+}
+
+.button {
+  width: 40vw;
+}
+    
 }
 
 
@@ -825,20 +815,13 @@ body {
         width: 45%;
     }
     
+      .contact-heading h2::before {
+        width: 45%;
+    }
     
-    .work-links {
-    flex-direction: column;
-    align-items: center;
-}
-    
-    .past-work img {
-    height: 50%;
-    padding: 10px;
-}
-    
-    .past-work a {
-    width: 70%;
-}
+    .contact-heading i::after {
+        width: 45%;
+    }
     
     #myBtn {
     bottom: 10px; 
@@ -855,7 +838,19 @@ body {
 @media only screen and (max-width: 600px) {
     .about {
         padding: 2em;
-    } 
+    }
+    
+      input {
+    width: 70vw;
+}
+
+textarea {
+    width: 90vw;
+}
+
+.button {
+  width: 50vw;
+}
 }
 
 
