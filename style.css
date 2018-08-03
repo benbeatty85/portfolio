@@ -351,6 +351,7 @@ body {
 
 .text {
   color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
   font-size: 30px;
   position: absolute;
   text-align: center;
@@ -363,51 +364,156 @@ body {
   white-space: nowrap;
 }
 
-/*Design Work*/
+/*Projects*/
 
-.design {
+.projects {
+    background: white;
+}
+
+.project-heading {
+    text-align: center;
+    color: #CD5C5C;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #CDCDC0;
-    border-bottom: 5px solid #008080;
 }
 
-.design img {
-    width: 80%;
+.project-heading h2 {
+    font-size: 5em;
     padding: 10px;
-    border-radius: 15px;
-    opacity: 0.7;
-    transition: opacity .5s ease-in-out;
+    font-family: 'Nixie One', cursive;
+    text-transform: lowercase;
 }
 
-.design img:hover {
-    opacity: 1;
+.project-heading i {
+    font-size: 5em;
 }
 
-.design a {
-    width: 40%;
-    margin: auto;
+.project-heading h2::before {
+    content: '';
+    width: 20%;
+    border-bottom: 4px dotted #CD5C5C;
+    display: block;
+    margin: 25px auto;
+}
+
+.project-heading i::after {
+    content: '';
+    width: 20%;
+    border-bottom: 4px dotted #CD5C5C;
+    display: block;
+    margin: 25px auto;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+.project-image {
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     text-align: center;
+    padding-top: 400px;
+    transition: all 500ms ease;
+    -webkit-transition: 500ms all ease;
+    -ms-transition: 500ms all ease;
+    -o-transition: 500ms all ease;
 }
 
-.design h2 {
-    font-family: 'Quicksand', sans-serif;
+.image-overlay:hover {
+    background-color: rgba(255,99,71,0.7);
+    padding-top: 130px;
+}
+
+.image-overlay a {
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
     text-transform: capitalize;
-    color: #708090;
-    font-size: 50px;
-    text-align: center;
+    transition: all 500ms ease;
+    -webkit-transition: 500ms all ease;
+    -ms-transition: 500ms all ease;
+    -o-transition: 500ms all ease;
 }
 
-.design h3 {
-    font-family: 'Quicksand', sans-serif;
-    text-transform: capitalize;
-    color: #CD5C5C;
-    font-size: 30px;
-    text-align: center;
+.image-overlay a:hover {
+    background-color: rgba(155,155,155,0.3);
 }
+
+.image-one {
+    background-image: url(img/projectone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-two {
+    background-image: url(img/projecttwo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-three {
+    background-image: url(img/projectthree.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-four {
+    background-image: url(img/projectfour.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-five {
+    background-image: url(img/projectfive.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-six {
+    background-image: url(img/projectsix.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-seven {
+    background-image: url(img/projectseven.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-eight {
+    background-image: url(img/projecteight.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 /*Past Work*/
@@ -710,6 +816,14 @@ body {
 .team-heading i::after {
     width: 45%;
 }
+    
+    .project-heading h2::before {
+        width: 45%;
+    }
+    
+    .project-heading i::after {
+        width: 45%;
+    }
     
     
     .work-links {
