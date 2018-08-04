@@ -671,13 +671,24 @@ textarea {
     height: 100px;
     padding: 18px;
     margin: 30px;
-    transition: 300ms all;
+    transition: 200ms all ease;
 }
 
 .icon-style i {
     font-size: 60px;
     color: #CD5C5C;
 }
+
+.footer-text {
+    display: flex;
+    align-self: center;
+    margin-right: 75px;
+    color: #CD5C5C;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+
 
 /*Top of page button*/
 
@@ -695,8 +706,6 @@ textarea {
 	position:absolute;
 	right:20px;
 	bottom:20px;
-	background:black;
-	padding:20px;
     border-radius: 15px;
 	text-align: center;
 	margin: 0 0 0 0;
@@ -708,8 +717,8 @@ textarea {
 }
 
 .scroll .fa {
-	font-size:30px;
-    color: #CD5C5C;
+	font-size:40px;
+    color: black;
 	margin-top:-5px;
 	margin-left:1px;
 	transition: 0.5s;
@@ -750,6 +759,26 @@ textarea {
 
 
 /*Media Queries*/
+
+@media only screen and (max-width: 1200px) {
+    .footer {
+    display: flex;
+    flex-direction: column;
+}
+    
+    .media-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0px;
+    padding: 25px;
+}
+    
+    .footer-text {
+    margin-right: 0px;
+    padding: 20px;
+    font-size: 15px;
+}
+}
 
 @media only screen and (max-width: 960px) {
     
@@ -899,6 +928,10 @@ textarea {
     .about {
         padding: 2em;
     }
+    
+    .project-images {
+    padding: 1em;
+}
     
       input {
     width: 70vw;
