@@ -564,6 +564,20 @@ body {
     align-items: center;
 }
 
+.name-email {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.name {
+    padding-right: 10px;
+}
+
+.email {
+    padding-left: 10px;
+}
+
 .contact label {
     display: block;
     margin-top: 1em;
@@ -575,7 +589,7 @@ body {
 input {
     display: block;
     padding: 0.75em;
-    width: 20vw;
+    width: 24vw;
     font-size: 1rem;
     color: #414141;
 }
@@ -821,6 +835,18 @@ textarea {
     
     .contact-heading i::after {
         width: 45%;
+    }
+    
+    .name-email {
+    flex-direction: column;
+}
+    
+    .name {
+        padding-right: 0;
+    }
+    
+    .email {
+        padding-left: 0;
     }
     
     #myBtn {
