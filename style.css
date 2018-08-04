@@ -177,7 +177,7 @@ body {
 }
 
 .grow {
-    color: #FF8C00;
+    color: #CD5C5C;
     position: relative;
     padding: 10px;
 }
@@ -633,7 +633,7 @@ textarea {
 }
 
 .button:hover {
-    background-color: antiquewhite;
+    background-color: snow;
 }
 
 .button:hover span {
@@ -643,6 +643,40 @@ textarea {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/*Footer Section*/
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.media-icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 200px;
+}
+
+.icon-style {
+    border: 3px solid #CD5C5C;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 18px;
+    margin: 30px;
+    transition: 300ms all;
+}
+
+.icon-style i {
+    font-size: 60px;
+    color: #CD5C5C;
 }
 
 /*Top of page button*/
