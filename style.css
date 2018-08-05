@@ -178,34 +178,6 @@ body {
 
 .grow {
     color: #CD5C5C;
-    position: relative;
-    padding: 10px;
-}
-
-.grow::before, .grow::after {
-    position: absolute;
-    content: '';
-    transition: transform 500ms ease;
-    left:0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    border-style: solid;
-    border-color: white;
-}
-
-.grow::before {
-    border-width: 2px 0 2px 0;
-    transform: scaleX(0);
-}
-
-.grow::after {
-    border-width: 0 2px 0 2px;
-    transform: scaleY(0);
-}
-
-.grow:hover::before, .grow:hover::after {
-    transform: scale(1,1);
 }
 
 
@@ -948,6 +920,40 @@ textarea {
 
 .button {
   width: 50vw;
+}
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .grow {
+    position: relative;
+    padding: 10px;
+}
+    
+    .grow::before, .grow::after {
+    position: absolute;
+    content: '';
+    transition: transform 500ms ease;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: white;
+}
+
+.grow::before {
+    border-width: 2px 0 2px 0;
+    transform: scaleX(0);
+}
+
+.grow::after {
+    border-width: 0 2px 0 2px;
+    transform: scaleY(0);
+}
+
+.grow:hover::before, .grow:hover::after {
+    transform: scale(1,1);
 }
 }
 
