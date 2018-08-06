@@ -392,6 +392,7 @@ body {
     margin: 20px;
     position: relative;
     overflow: hidden;
+    border-radius: 50%;
 }
 
 .image-overlay {
@@ -406,12 +407,12 @@ body {
     -o-transition: 500ms all ease;
 }
 
-.image-overlay:hover {
+.project-image:hover > .image-overlay {
     background-color: rgba(255,99,71,0.7);
     padding-top: 130px;
 }
 
-.image-overlay:focus {
+.project-image:focus > .image-overlay {
     background-color: rgba(255,99,71,0.7);
     padding-top: 130px;
 }
